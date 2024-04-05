@@ -71,6 +71,7 @@ jobs:
 
   push_to_mirror:
     needs: [check_coding_style, check_program_compilation , run_tests]
+    if: github.repository != 'EpitechPromo2028/B-DOP-200-LIL-2-1-chocolatine-owen.hudson'
     name: push_to_mirror
     runs-on: ubuntu-latest
     steps:
